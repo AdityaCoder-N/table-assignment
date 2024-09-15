@@ -117,7 +117,7 @@ export default function OptimizedTableComponent() {
         onPage={onPageChange}
         tableStyle={{ minWidth: '50rem' }}
         showGridlines
-        selectionMode={"radiobutton"}
+        selectionMode="multiple"
       >
         <Column selectionMode="multiple" headerStyle={{ width: '3rem' }} />
         {columns.map((col, index) => (

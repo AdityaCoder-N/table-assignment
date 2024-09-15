@@ -16,7 +16,7 @@ const useFetch = (page:number) => {
           // 
           const response = await fetch(`https://api.artic.edu/api/v1/artworks?page=${page}`)
           const data = await response.json();
-          console.log(data);
+         
           const arr = data.data.map((row:tableDataType)=>{
               return ({
                   title:row.title,
@@ -27,7 +27,7 @@ const useFetch = (page:number) => {
                   date_end:row.date_end,
               })
           })
-        //   console.log(arr);
+        
           setData(arr);
   
         } catch (error) {

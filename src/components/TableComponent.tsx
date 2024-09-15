@@ -54,7 +54,6 @@ export default function TableComponent() {
        
         if (!loading && remainingRows > 0 && page > initialPage && (page-initialPage)*ROWS_PER_PAGE <= rowsToSelect) {
 
-            console.log("Select karo")
             const remainingRowsToSelect = Math.max(remainingRows - data.length, 0);
             const rowsOnCurrentPage = Math.min(data.length, remainingRows);
 
